@@ -1,0 +1,40 @@
+POST http://localhost:3000/api/users
+content-type: application/json
+
+{
+    "name": "Nay",
+    "email": "nay@teste.com",
+    "password": "nay"
+}
+
+###
+POST http://192.168.2.104:3000/api/login
+Content-type: application/json
+
+{
+    
+    "email": "nay@teste.com",
+    "password": "nay"
+}
+###
+POST http://localhost:3000/api/message
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik5heSIsImlhdCI6MTczMTIwODQ5OX0.ct8cpUfZppz-9UPFbOu-GOERjaLUd1xce3IEvTtwV9s
+
+{
+    "content": "Serio?"
+}
+###
+GET https://bb84-186-233-37-107.ngrok-free.app/api/message
+Content-Type: application/json
+
+###
+GET https://bb84-186-233-37-107.ngrok-free.app/api/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjgsIm5hbWUiOiJFbGllbmFpIiwiaWF0IjoxNzMxMTA4NDg0fQ.UvsFZqhpv0n0EEO3ZNnEKb-BPTVTfgUxIabE4_J1LHM
+
+###
+
+GET http://localhost:3000/api/users
+
+
